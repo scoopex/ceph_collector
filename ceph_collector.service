@@ -1,6 +1,6 @@
 [Unit]
 Description=ceph_collector
-After=network.target auditd.service syslog.target
+After=network.target auditd.service syslog.target ceph-osd.target ceph-mon.target
 
 [Service]
 WorkingDirectory=/opt/zabbix_ceph_collector/
